@@ -1,11 +1,10 @@
-<img src={bikeInfo.mainImage} alt="">
-<div>{JSON.stringify(bikeList)}</div>
+<img src={modelInfo.mainImage} alt="">
+<div>{JSON.stringify(modelInfo)}</div>
 
 <script lang="ts">
-	import {bikeList} from '$lib/data'
 	import type {PageData} from './$types'
 
 	export let data: PageData;
+	const {modelInfo} = data
 
-	const bikeInfo = bikeList[data.make][data.model]
 </script>
