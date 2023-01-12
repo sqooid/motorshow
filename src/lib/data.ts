@@ -1,7 +1,8 @@
 export type Model = {
   id: string;
   name: string;
-  mainImage: string;
+  smallImage: string;
+  largeImage: string;
   horsepower: number;
   cc: number;
   topSpeed: number;
@@ -22,12 +23,26 @@ export const bikeList: Make[] = [
       {
         id: 'ninja-300',
         name: 'Ninja 300',
-        mainImage:
+        smallImage:
+          'https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/15EX300B_44SLIMDRS2CG_C.png',
+        largeImage:
           'https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/15EX300B_44SLIMDRS2CG_C.png',
         horsepower: 39,
         cc: 296,
         topSpeed: 180,
         msrp: 6399
+      },
+      {
+        id: 'ninja-400',
+        name: 'Ninja 400',
+        smallImage:
+          'https://content2.kawasaki.com/ContentStorage/KMA/Products/12000/00754628-840c-4f37-ba8b-65a6abf39433.png',
+        largeImage:
+          'https://content2.kawasaki.com/ContentStorage/KMA/Products/12000/00754628-840c-4f37-ba8b-65a6abf39433.png',
+        horsepower: 49,
+        cc: 399,
+        topSpeed: 160,
+        msrp: 8300
       }
     ]
   }

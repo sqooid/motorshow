@@ -5,5 +5,5 @@
   const { modelInfo } = data;
 </script>
 
-<img src={modelInfo.mainImage} alt="" />
+<img src={modelInfo.smallImage} alt="" />
 <div>{JSON.stringify(modelInfo)}</div>
