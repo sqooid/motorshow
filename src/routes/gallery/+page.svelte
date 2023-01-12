@@ -7,9 +7,12 @@
 <Grid>
   {#each bikeList as make}
     {#each make.models as model}
-      <a href={`/${make.id}/${model.id}`}>
-        <Tile imageUrl={model.smallImage} make={make.name} model={model.name} />
-      </a>
+      <Tile
+        imageUrl={model.smallImage}
+        make={make.name}
+        model={model.name}
+        link={`/detail/${make.id}/${model.id}`}
+      />
     {/each}
   {/each}
 </Grid>
