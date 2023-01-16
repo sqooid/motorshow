@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { bikeList } from '$lib/data';
+  import { bikeList, getBikeImage } from '$lib/data';
   import Grid from './grid.svelte';
   import Tile from './tile.svelte';
 </script>
@@ -8,7 +8,7 @@
   {#each bikeList as make}
     {#each make.models as model}
       <Tile
-        imageUrl={model.smallImage}
+        imageUrl={getBikeImage(model)}
         make={make.name}
         model={model.name}
         link={`/detail/${make.id}/${model.id}`}
