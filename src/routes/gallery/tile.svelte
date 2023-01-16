@@ -17,7 +17,7 @@
   </div>
 </a>
 
-<style>
+<style lang="css">
   .tile:hover img {
     @apply scale-105;
   }
