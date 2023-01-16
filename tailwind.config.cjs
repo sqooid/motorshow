@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      heading: ['Alfa Slab One']
+      heading: ['Alfa Slab One'],
+      signika: ['Signika Negative', 'sans-serif']
     }
   },
   plugins: []
